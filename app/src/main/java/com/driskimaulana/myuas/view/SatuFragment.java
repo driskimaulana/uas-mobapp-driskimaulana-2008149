@@ -68,7 +68,7 @@ public class SatuFragment extends Fragment {
         binding.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                binding.tvKeterangan.setText("Tunggu sebentar, loading data harga bitcoin (USD)");
+                binding.tvKeterangan.setText("Tunggu sebentar, loading data Activity");
                 //https://api.coindesk.com/v1/bpi/currentprice.json
                 Log.d("mydebug_1","onclick");
                 ApiBored.get("api/activity", null, new JsonHttpResponseHandler(){
