@@ -34,7 +34,9 @@ public class AdapterHasil extends RecyclerView.Adapter<ViewHolderHasil> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolderHasil holder, int position) {
         HasilModel m = alHasil.get(position);
-        holder.tvHasil.setText(m.getHasil());
+        holder.tvTimestamp.setText(m.getTimestamp());
+        holder.tvDiangkat.setText(m.getAngkatText());
+//        holder.tvHasil.setText(m.getHasil());
     }
 
     @Override

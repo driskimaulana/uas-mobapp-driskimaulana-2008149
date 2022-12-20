@@ -9,10 +9,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.driskimaulana.myuas.R;
 
 public class ViewHolderHasil extends RecyclerView.ViewHolder {
-    public TextView tvHasil;
+    public TextView tvTimestamp;
+    public TextView tvDiangkat;
 
     public ViewHolderHasil(@NonNull View itemView) {
         super(itemView);
-        tvHasil = itemView.findViewById(R.id.tvRow);
+        tvTimestamp = itemView.findViewById(R.id.tvTimestamp);
+        tvDiangkat = itemView.findViewById(R.id.tvDiangkat);
+//        tvHasil = itemView.findViewById(R.id.tvRow);
     }
 }
